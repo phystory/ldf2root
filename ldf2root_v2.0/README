@@ -1,0 +1,33 @@
+Before you compile the code, you may want to define $(ROOTLIB) and $(ROOTINCLUDE).
+Or, you will meet errors whle you compile the code.
+
+In Bash,
+export ROOTLIB=<Your Root Library Directory>
+export ROOTINCLUDE=<Your Root Include Directory>
+
+In csh,
+setenv ROOTLIB <Your Root Library Directory>
+setenv ROOTINCLUDE <Your Root Include Directory>
+
+Ex)
+In Bash,
+tonian@tonian:~/ldf2root_v1.0$ export ROOTLIB=/usr/lib/root
+tonian@tonian:~/ldf2root_v1.0$ export ROOTINCLUDE=/usr/include/root
+
+In csh,
+tonian@tonian:~/ldf2root_v1.0$ setenv ROOTLIB /usr/lib/root
+tonian@tonian:~/ldf2root_v1.0$ setenv ROOTINCLUDE /usr/include/root
+
+Finally, you can make the program by typing as
+
+make
+
+You will have ldf2root.
+
+Usage)
+ldf2root PacFile EventFile [RootFileName StartBlock EndBlock]
+
+Ex)
+ldf2root ge80dp.pac alpha.ldf
+ldf2root ge80dp.pac alpha.ldf alpha.root
+ldf2root ge80dp.pac alpha.ldf alpha.root 1 100

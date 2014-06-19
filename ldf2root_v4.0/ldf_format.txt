@@ -1,0 +1,5 @@
+CID701(16bit) CIDVALUE(16bit) CID702(16bit) CIDVALUE(16bit) PACID(16bit) VALUE(16bit) EOB1(32bit) EOB1(32bit)
+82bd          0001            82be          0eba            8020         014c         804e 0220   8050 0227
+
+CID701(16bit) CIDVALUE(16bit) CID702(16bit) CIDVALUE(16bit) PACID(16bit) VALUE(16bit) PACID(16bit) VALUE(16bit) PACID(16bit) VALUE(16bit) EOB1(32bit) EOB1(32bit)
+82bd          0001            82be          0eba            8020         00d7         802d         00a5         802f 00a6                 804e 021f   8050 0227

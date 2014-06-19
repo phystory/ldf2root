@@ -1,0 +1,53 @@
+
+ExtraHistos.o: ExtraHistos.cpp configfile.h configfile/configfile.h \
+  ExtraHistos.h /usr/include/root/TH1.h /usr/include/root/TAxis.h \
+  /usr/include/root/TNamed.h /usr/include/root/TObject.h \
+  /usr/include/root/Rtypes.h /usr/include/root/RConfig.h \
+  /usr/include/root/RVersion.h /usr/include/root/DllImport.h \
+  /usr/include/root/Rtypeinfo.h /usr/include/root/TGenericClassInfo.h \
+  /usr/include/root/TStorage.h /usr/include/root/TVersionCheck.h \
+  /usr/include/root/Riosfwd.h /usr/include/root/TBuffer.h \
+  /usr/include/root/TString.h /usr/include/root/TRefCnt.h \
+  /usr/include/root/TMathBase.h /usr/include/root/TAttAxis.h \
+  /usr/include/root/TArrayD.h /usr/include/root/TArray.h \
+  /usr/include/root/TAttLine.h /usr/include/root/TAttFill.h \
+  /usr/include/root/TAttMarker.h /usr/include/root/TArrayC.h \
+  /usr/include/root/TArrayS.h /usr/include/root/TArrayI.h \
+  /usr/include/root/TArrayF.h /usr/include/root/Foption.h \
+  /usr/include/root/TVectorFfwd.h /usr/include/root/TVectorDfwd.h \
+  /usr/include/root/TH2.h /usr/include/root/TMatrixFBasefwd.h \
+  /usr/include/root/TMatrixDBasefwd.h
+	$(CPP) -c $(CPPFLAGS) $<
+
+Read_NSCLDAQ_Offline.o: Read_NSCLDAQ_Offline.cpp /usr/include/root/TH1.h \
+  /usr/include/root/TAxis.h /usr/include/root/TNamed.h \
+  /usr/include/root/TObject.h /usr/include/root/Rtypes.h \
+  /usr/include/root/RConfig.h /usr/include/root/RVersion.h \
+  /usr/include/root/DllImport.h /usr/include/root/Rtypeinfo.h \
+  /usr/include/root/TGenericClassInfo.h /usr/include/root/TStorage.h \
+  /usr/include/root/TVersionCheck.h /usr/include/root/Riosfwd.h \
+  /usr/include/root/TBuffer.h /usr/include/root/TString.h \
+  /usr/include/root/TRefCnt.h /usr/include/root/TMathBase.h \
+  /usr/include/root/TAttAxis.h /usr/include/root/TArrayD.h \
+  /usr/include/root/TArray.h /usr/include/root/TAttLine.h \
+  /usr/include/root/TAttFill.h /usr/include/root/TAttMarker.h \
+  /usr/include/root/TArrayC.h /usr/include/root/TArrayS.h \
+  /usr/include/root/TArrayI.h /usr/include/root/TArrayF.h \
+  /usr/include/root/Foption.h /usr/include/root/TVectorFfwd.h \
+  /usr/include/root/TVectorDfwd.h /usr/include/root/TDirectory.h \
+  /usr/include/root/TList.h /usr/include/root/TSeqCollection.h \
+  /usr/include/root/TCollection.h /usr/include/root/TIterator.h \
+  /usr/include/root/TDatime.h /usr/include/root/TUUID.h \
+  /usr/include/root/TRint.h /usr/include/root/TApplication.h \
+  /usr/include/root/TQObject.h /usr/include/root/TApplicationImp.h \
+  /usr/include/root/TBrowser.h /usr/include/root/TBrowserImp.h \
+  /usr/include/root/TThread.h /usr/include/root/TMutex.h \
+  /usr/include/root/TVirtualMutex.h /usr/include/root/TMutexImp.h \
+  /usr/include/root/TCondition.h /usr/include/root/TConditionImp.h \
+  /usr/include/root/TSystem.h /usr/include/root/TInetAddress.h \
+  /usr/include/root/TTimer.h /usr/include/root/TSysEvtHandler.h \
+  /usr/include/root/TTime.h /usr/include/root/Varargs.h configfile.h \
+  configfile/configfile.h ExtraHistos.h /usr/include/root/TH2.h \
+  /usr/include/root/TMatrixFBasefwd.h /usr/include/root/TMatrixDBasefwd.h
+	$(CPP) -c $(CPPFLAGS) $<
+
