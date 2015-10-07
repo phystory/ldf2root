@@ -1,0 +1,30 @@
+Before you compile the code, you need to install the ROOT <https://root.cern.ch/> (Of course!!).
+Or, you will meet errors whle you compile the code.
+
+Install ROOT with an instruction linked below.
+https://root.cern.ch/root/htmldoc/guides/users-guide/ROOTUsersGuide.html
+
+Finally, you can make the program by typing as
+
+make
+
+You will have ldf2root.
+
+Usage)
+ldf2root PacFile EventFile [RootFileName StartBlock EndBlock]
+
+Ex)
+ldf2root ge80dp.pac alpha.ldf
+ldf2root ge80dp.pac alpha.ldf alpha.root
+ldf2root ge80dp.pac alpha.ldf alpha.root 1 100
+
+Your ldf2root will also generate readroot.C file to provide a sample root code to analyze the converted root file.
+
+Usage)
+root readroot.C
+or
+root readroot.C++
+
+In the root console, type ".ls" to see list of histograms.
+
+Enjoy!

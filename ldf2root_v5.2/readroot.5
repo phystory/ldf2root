@@ -1,0 +1,18 @@
+    hSingle[i] = new TH1I(Form("hSingle_%d",i),Form("hSingle_%d",i),8192,0,8192);
+  }
+
+  DataTree->SetBranchAddress("multiplicity",&multiplicity);
+  DataTree->SetBranchAddress("pacid",&bpacid);
+  DataTree->SetBranchAddress("value",&bvalue);
+
+  Nevents = 0;
+  Nevents = DataTree->GetEntries();
+
+  cout << "Nevents="<<Nevents <<endl;
+  for (int i=0;i<Nevents;i++) {
+    DataTree->GetEntry(i);
+    Int_t n = multiplicity;
+
+    for (int j=0;j<n;j++) {
+      adc = bpacid[j];
+      value = bvalue[j];

@@ -1,0 +1,4 @@
+  //fAnalysis = new TFile("analysis.root","RECREATE");
+  f = new TFile(rootname.c_str(),"READ");
+  DataTree = (TTree*) f->Get(treename.c_str());
+
